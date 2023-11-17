@@ -1,4 +1,5 @@
 # Локальный запуск через cmd
+## Совместимость python 3.9, 3.10, 3.11
 1) git clone https://github.com/Nikita-Kolbin/good.git
 2) cd good 
 3) python -m venv venv
