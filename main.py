@@ -4,12 +4,12 @@ from keras_preprocessing.text import tokenizer_from_json
 import json
 
 
-with open('tokenizer.json', 'r', encoding='utf-8') as file:
+with open('models/tokenizer-v2.json', 'r', encoding='utf-8') as file:
     data = json.load(file)
     tokenizer = tokenizer_from_json(data)
 max_sequence_length = 250
 
-model = load_model('model.keras')
+model = load_model('models/model-v2.keras')
 
 
 def encode(test_input):
